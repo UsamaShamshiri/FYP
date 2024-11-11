@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animations.css">  
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Doctor Appointment System</title>
+    <style>
+        table{
+            animation: transitionIn-Y-bottom 0.5s;
+        }
+        .team-section {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15%;
+    padding-bottom: 5%;
+}
+
+.team-member .card {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15), 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-member .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 123, 255, 0.2);
+    transition: height 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.team-member .card:hover:before {
+    height: 100%;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+.team-member p {
+    color: #666;
+    margin: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.social-links {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.social-links a {
+    color: #666;
+    margin: 0 10px;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.social-links a:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+    .team-member .card {
+        width: 100%;
+    }
+}
+    </style>
+        
+</head>
+<body>
+    
+    <div class="full-height">
+        <center>
+        <table border="0">
+            <tr>
+                <td width="80%">
+                    <font class="edoc-logo">Doctor </font>
+                    <font class="edoc-logo-sub">| THE S.E Student PROJECT</font>
+                </td>
+                <td width="10%">
+                   <a href="login.php"  class="non-style-link"><p class="nav-item" style="background-color: red; border: none; border-radius: 20px; padding: 10px 30px; color: white;">LOGIN</p></a>
+                </td>
+                <td  width="10%">
+                    <a href="signup.php" class="non-style-link"><p class="nav-item" style="padding-right: 10px;background-color: red; border: none; border-radius: 20px;padding: 10px 30px; color: white;">REGISTER</p></a>
+                </td>
+            </tr>
+            
+            <tr>
+                <td  colspan="3">
+                    <p class="heading-text">Avoid Hassles & Delays.</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="3">
+                    <p class="sub-text2">How is health today, Sounds like not good!<br>Don't worry. Find your doctor online Book as you wish with eDoc. <br>
+                    We offer you a free doctor channeling service, Make your appointment now.</p>
+                </td>
+            </tr>
+            <tr>
+                
+                <td colspan="3">
+                    <center>
+                    <a href="login.php" >
+                        <input type="button" value="Make Appointment" class="login-btn btn-primary btn" style="padding-left: 25px;padding-right: 25px;padding-top: 10px;padding-bottom: 10px; background-color: red; border: none; border-radius: 20px;">
+                    </a>
+                </center>
+                </td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                   
+                </td>
+            </tr>
+        </table>
+        <section class="team-section">
+            <div class="team-member">
+                <div class="card">
+                    <img src="a.jpeg" alt="Team Member Photo">
+                    <h3>Tayyab Mehmood </h3>
+                    <p>tayabiub88@gmail.com</p>
+                    <p>Frontend Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="card">
+                    <img src="b.jpeg" alt="Team Member Photo">
+                    <h3>Muhammad Usman</h3>
+                    <p>usamashamshiri@gmail.com</p>
+                    <p>Backend Developer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="card">
+                    <img src="c.png" alt="Team Member Photo">
+                    <h3>Muhammad Naveed Ahmad</h3>
+                    <p>naveedahmad@gmail.com</p>
+                    <p>UI/UX Designer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <p class="sub-text2 footer-hashen">A Web Solution by Software Engineering Students.</p>
+    </center>
+    
+    </div>
+</body>
+</html>
